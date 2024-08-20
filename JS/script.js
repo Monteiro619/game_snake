@@ -96,7 +96,7 @@ const moveSnake = () =>{
 
 const drawGrid = () => { 
     ctx.lineWidth = 1
-    ctx.strokeStyle = "#191919"
+    ctx.strokeStyle = "#191919" //cor das linhas
     
     for (let i = 30; i < canvas.width; i += 30 ) {
 
@@ -173,7 +173,7 @@ const gameLoop = () =>{
 
     loopId = setTimeout(() => {
         gameLoop()
-    }, 300)
+    }, 250)
 }
 
 gameLoop()
